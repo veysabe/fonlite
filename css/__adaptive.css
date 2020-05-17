@@ -37,4 +37,11 @@
     .content__item-phone-box { width: 300px; }
     .content__item-phone { width: 300px; height: 356px; background-size: 100%; }
     .content__item-phone-circle { width: 300px; height: 300px; }
+    .content__item-phone-background { display: none; }
+    .slick-slide > img { width: 100%; }
+    .content__item-text { width: 300px; height: 100%; }
+    .content__item-text > span { margin-top: 10px; font-size: 14px; }
+    .footer-items { flex-direction: column; }
+    .footer-container { height: 100px; }
+    .footer-items__left { margin-top: 10px; }
 }

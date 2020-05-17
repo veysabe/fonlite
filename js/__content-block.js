@@ -3,7 +3,7 @@ $(document).ready(function() {
     infinite: true,
     fade: true,
     cssEase: 'linear',
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
     prevArrow: '<button type="button" class="slick-prev"><div class="slider-left-arrow"></div></button>',
     nextArrow: '<button type="button" class="slick-next"><div class="slider-right-arrow"></div></button>',
