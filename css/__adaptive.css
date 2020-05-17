@@ -41,7 +41,7 @@
     .slick-slide > img { width: 100%; }
     .content__item-text { width: 300px; height: 100%; }
     .content__item-text > span { margin-top: 10px; font-size: 14px; }
-    .footer-items { flex-direction: column; }
+    .footer-items { flex-direction: column; margin-left: 0; }
     .footer-container { height: 100px; }
     .footer-items__left { margin-top: 10px; }
 }
