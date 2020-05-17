@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="js/jquery-3.4.1.min.js"></script>
-        <script src="js/jquery.flexslider-min.js"></script>
-        <script src="js/__menu-block.js"></script>
         <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic-ext,cyrillic" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/flexslider.css"/>
         <link rel="stylesheet" href="css/styles.css">
+        
         <link rel="stylesheet" href="css/__menu-block.css">
         <link rel="stylesheet" href="css/__content-block.css">
+        <link rel="stylesheet" href="css/__footer-block.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
         <meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/__adaptive.css">
         <title>test</title>
     </head>
 
@@ -44,13 +46,22 @@
             </div>
         </div>
         <div class="content-block">
+            <div class="content-block__adaptive-dark"></div>
             <div class="content-container">
                 <div id="content" class="content">
                     <ul class="slides">
                         <li>
                             <div class="content__item">
                                 <div class="content__item-phone">
-                                    <div class="content__item-phone-cirlce"><span></span></div>
+                                    <div class="content__item-phone-box">
+                                        <div class="content__item-phone-slider">
+                                            <div><img src="img/phone.png"></div>
+                                            <div><img src="img/phone1.png"></div>
+                                            <div><img src="img/phone2.png"></div>
+                                        </div>
+                                    </div>
+                                    <div class="content__item-phone-circle"></div>
+                                    <div class="content__item-phone-background"></div>
                                 </div>
                                 <div class="content__item-text">
                                     <h1>Общайтесь</h1>
@@ -81,27 +92,203 @@
                         </li>
                         <li>
                             <div class="content__item">
-                                <div class="content__item-phone"></div>
+                                <div class="content__item-phone">
+                                    <div class="content__item-phone-box">
+                                        <div class="content__item-phone-slider">
+                                            <div><img src="img/phone.png"></div>
+                                            <div><img src="img/phone1.png"></div>
+                                            <div><img src="img/phone2.png"></div>
+                                        </div>
+                                    </div>
+                                    <div class="content__item-phone-circle"></div>
+                                    <div class="content__item-phone-background"></div>
+                                </div>
+                                <div class="content__item-text">
+                                    <h1>Общайтесь</h1>
+                                    <h2>Начать просто</h2>
+                                    <span>
+                                        Вы устанавливаете приложение на телефон и запускаете его. <br>
+                                        Все остальное мы сделаем сами
+                                    </span>
+                                    <span>
+                                        Бесплатные звонки и сообщения между абонентами FONlite <br>
+                                        Бесплатные звонки на телефоны Москвы (в кодах: 495, 499, 498) <br>
+                                        Анонимность общения! <br>
+                                        Регистрация в сети FONlite не требует «привязки» к номеру <br> 
+                                        сотового телефона или предоставления личных данных, а <br>
+                                        звонки на телефоны сетей фиксированной связи и сотовых <br>
+                                        операторов – «определяются», просто, как звонки с номера <br>
+                                        +74992155550. <br>
+                                        Регистрация (присвоение логина и пароля) происходит <br>
+                                        автоматически при первом запуске приложения. <br>
+                                        Возможность звонить абонентам FONlite с любых телефонов <br> 
+                                        Московского региона, через многоканальный телефон <br>
+                                        «дозвона» +7 (499) 2155550 <br>
+                                        Бесплатный федеральный номер для «дозвона» абонентам <br>
+                                        FONlite с телефонов других регионов России 8 (800) 1006434 <br>
+                                    </span>
+                                </div>
                             </div>
                         </li>
                         <li>
                             <div class="content__item">
-                                <div class="content__item-phone"></div>
+                                <div class="content__item-phone">
+                                    <div class="content__item-phone-box">
+                                        <div class="content__item-phone-slider">
+                                            <div><img src="img/phone.png"></div>
+                                            <div><img src="img/phone1.png"></div>
+                                            <div><img src="img/phone2.png"></div>
+                                        </div>
+                                    </div>
+                                    <div class="content__item-phone-circle"></div>
+                                    <div class="content__item-phone-background"></div>
+                                </div>
+                                <div class="content__item-text">
+                                    <h1>Общайтесь</h1>
+                                    <h2>Начать просто</h2>
+                                    <span>
+                                        Вы устанавливаете приложение на телефон и запускаете его. <br>
+                                        Все остальное мы сделаем сами
+                                    </span>
+                                    <span>
+                                        Бесплатные звонки и сообщения между абонентами FONlite <br>
+                                        Бесплатные звонки на телефоны Москвы (в кодах: 495, 499, 498) <br>
+                                        Анонимность общения! <br>
+                                        Регистрация в сети FONlite не требует «привязки» к номеру <br> 
+                                        сотового телефона или предоставления личных данных, а <br>
+                                        звонки на телефоны сетей фиксированной связи и сотовых <br>
+                                        операторов – «определяются», просто, как звонки с номера <br>
+                                        +74992155550. <br>
+                                        Регистрация (присвоение логина и пароля) происходит <br>
+                                        автоматически при первом запуске приложения. <br>
+                                        Возможность звонить абонентам FONlite с любых телефонов <br> 
+                                        Московского региона, через многоканальный телефон <br>
+                                        «дозвона» +7 (499) 2155550 <br>
+                                        Бесплатный федеральный номер для «дозвона» абонентам <br>
+                                        FONlite с телефонов других регионов России 8 (800) 1006434 <br>
+                                    </span>
+                                </div>
                             </div>
                         </li>
                         <li>
                             <div class="content__item">
-                                <div class="content__item-phone"></div>
+                                <div class="content__item-phone">
+                                    <div class="content__item-phone-box">
+                                        <div class="content__item-phone-slider">
+                                            <div><img src="img/phone.png"></div>
+                                            <div><img src="img/phone1.png"></div>
+                                            <div><img src="img/phone2.png"></div>
+                                        </div>
+                                    </div>
+                                    <div class="content__item-phone-circle"></div>
+                                    <div class="content__item-phone-background"></div>
+                                </div>
+                                <div class="content__item-text">
+                                    <h1>Общайтесь</h1>
+                                    <h2>Начать просто</h2>
+                                    <span>
+                                        Вы устанавливаете приложение на телефон и запускаете его. <br>
+                                        Все остальное мы сделаем сами
+                                    </span>
+                                    <span>
+                                        Бесплатные звонки и сообщения между абонентами FONlite <br>
+                                        Бесплатные звонки на телефоны Москвы (в кодах: 495, 499, 498) <br>
+                                        Анонимность общения! <br>
+                                        Регистрация в сети FONlite не требует «привязки» к номеру <br> 
+                                        сотового телефона или предоставления личных данных, а <br>
+                                        звонки на телефоны сетей фиксированной связи и сотовых <br>
+                                        операторов – «определяются», просто, как звонки с номера <br>
+                                        +74992155550. <br>
+                                        Регистрация (присвоение логина и пароля) происходит <br>
+                                        автоматически при первом запуске приложения. <br>
+                                        Возможность звонить абонентам FONlite с любых телефонов <br> 
+                                        Московского региона, через многоканальный телефон <br>
+                                        «дозвона» +7 (499) 2155550 <br>
+                                        Бесплатный федеральный номер для «дозвона» абонентам <br>
+                                        FONlite с телефонов других регионов России 8 (800) 1006434 <br>
+                                    </span>
+                                </div>
                             </div>
                         </li>
                         <li>
                             <div class="content__item">
-                                <div class="content__item-phone"></div>
+                                <div class="content__item-phone">
+                                    <div class="content__item-phone-box">
+                                        <div class="content__item-feedback">
+                                            <div class="content__item-feedback-box">
+                                                <form name="feedback-form" method="post" id="feedback-form">
+                                                    <h2>Форма обратной связи</h2>
+                                                    <div class="feedback-form__input-box">
+                                                        <span>Ваше имя*</span>
+                                                        <input class="name__input" name="name" type="text"/>
+                                                    </div>
+                                                    <div class="feedback-form__input-box">
+                                                        <span>Номер телефона*</span>
+                                                        <input class="number__input" name="phone" type="text"/>
+                                                    </div>
+                                                    <div class="feedback-from__captcha-box">
+                                                        <img src="img/captcha.png">
+                                                    </div>
+                                                    <input id="feedbackform__submit" value="Отправить" type="button" />
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content__item-phone-circle"></div>
+                                </div>
+                                <div class="content__item-text">
+                                    <h1>Общайтесь</h1>
+                                    <h2>Начать просто</h2>
+                                    <span>
+                                        Вы устанавливаете приложение на телефон и запускаете его. <br>
+                                        Все остальное мы сделаем сами
+                                    </span>
+                                    <span>
+                                        Бесплатные звонки и сообщения между абонентами FONlite <br>
+                                        Бесплатные звонки на телефоны Москвы (в кодах: 495, 499, 498) <br>
+                                        Анонимность общения! <br>
+                                        Регистрация в сети FONlite не требует «привязки» к номеру <br> 
+                                        сотового телефона или предоставления личных данных, а <br>
+                                        звонки на телефоны сетей фиксированной связи и сотовых <br>
+                                        операторов – «определяются», просто, как звонки с номера <br>
+                                        +74992155550. <br>
+                                        Регистрация (присвоение логина и пароля) происходит <br>
+                                        автоматически при первом запуске приложения. <br>
+                                        Возможность звонить абонентам FONlite с любых телефонов <br> 
+                                        Московского региона, через многоканальный телефон <br>
+                                        «дозвона» +7 (499) 2155550 <br>
+                                        Бесплатный федеральный номер для «дозвона» абонентам <br>
+                                        FONlite с телефонов других регионов России 8 (800) 1006434 <br>
+                                    </span>
+                                </div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+        <div class="footer-block">
+            <div class="footer-container">
+                <div class="footer-items">
+                    <div class="footer-items__left">
+                        <img src="img/intellin.png">
+                        <span>Разработан в 2014</span>
+                    </div>
+                    <div class="footer-items__right">
+                        <span>Установить</span>
+                        <div class="footer-items__markets">
+                            <img src="img/appstore.png">
+                            <img src="img/googleplay.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script src="js/__menu-block.js"></script>
+        <script src="js/__content-block.js"></script>
     </body>
 </html>
