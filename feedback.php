@@ -1,3 +1,3 @@
 <?php
-    echo ();
+    echo ($_POST['name'].' '.$_POST['number']);
 ?>

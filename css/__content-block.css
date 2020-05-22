@@ -129,6 +129,11 @@
     background: url(../img/left-arrow-red.png) no-repeat center center;
 }
 
+_:-ms-fullscreen, :root .slick-prev:hover > .slider-left-arrow {
+    height: 100%;
+    background: url(../img/left-arrow-red.png) no-repeat center center;
+}
+
 .slider-right-arrow {
     height: 100%;
     background: url(../img/right-arrow.png) no-repeat center center;
@@ -139,16 +144,34 @@
     background: url(../img/right-arrow-red.png) no-repeat center center;
 }
 
+_:-ms-fullscreen, :root .slick-next:hover > .slider-right-arrow {
+    height: 100%;
+    background: url(../img/right-arrow-red.png) no-repeat center center;
+}
+
 .content__item-feedback {
     width: 250px;
     height: 400px;
+    max-height: 400px;
     background: rgba(255, 255, 255, 0.5);
     margin: auto;
     border-radius: 30px;
 }
 
+_:-ms-fullscreen, :root #feedback-form > * {
+    margin-bottom: 20px;
+}
+
+_:-ms-fullscreen, :root #feedback-form > .feedback-from__captcha-box {
+    max-width: 100%;
+    max-height: 70px;
+    margin: auto;
+}
+
 #feedback-form {
-    height: 80%;
+    min-height: 80%;
+    max-height: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -157,6 +180,8 @@
 
 .content__item-feedback-box {
     height: 100%;
+    max-height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;

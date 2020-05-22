@@ -38,6 +38,8 @@
     .content__item-phone { width: 300px; height: 356px; background-size: 100%; }
     .content__item-phone-circle { width: 300px; height: 300px; }
     .content__item-phone-background { display: none; }
+    .content__item-feedback-box { width: 300px; }
+    .content__item-feedback { width: 300px; height: 356px; background-size: 100%; }
     .slick-slide > img { width: 100%; }
     .content__item-text { width: 300px; height: 100%; }
     .content__item-text > span { margin-top: 10px; font-size: 14px; }
